@@ -2,15 +2,15 @@
 
 function palindrome(str){
 	let start = str[0];
-	let end = str.length - 1;
+	let end = str.length;
 	for(let i = 0; i < str.length; i++)
 		{
 			if(start != end)
 			{
-				return true;
+				return false;
 			}
 			else{
-				return false;
+				return true;
 			}
 			start++;
 			end++;
