@@ -1,17 +1,19 @@
 // complete the given function
 
-function palindrome(str) {
-  let start = str[0];
-  let end = str.length - 1;
-  
-  while (start < end) {
-    if (str[start] !== str[end]) {
-      return false; // Characters don't match, not a palindrome
-    }
-    
-    start++;
-    end--;
-  }
-  
-  return true;
+function palindrome(str){
+	let start = str[0];
+	let end = str.length;
+	for(let i = 0; i < str.length; i++)
+		{
+			if(start != end)
+			{
+				return true;
+			}
+			else{
+				return false;
+			}
+			start++;
+			end++;
+		}
+}
 module.exports = palindrome
