@@ -7,14 +7,13 @@ function palindrome(str){
 		{
 			if(start != end)
 			{
-				start++;
-				end--;
 				return true;
 			}
-			else
-			{
+			else{
 				return false;
 			}
+			start++;
+			end++;
 		}
 }
 module.exports = palindrome
