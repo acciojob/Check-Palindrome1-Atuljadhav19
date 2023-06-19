@@ -5,12 +5,12 @@ function palindrome(str){
 	let end = str.length;
 	for(let i = 0; i < str.length; i++)
 		{
-			if(start != end)
+			if(start == end)
 			{
-				return false;
+				return true;
 			}
 			else{
-				return true;
+				return false;
 			}
 			start++;
 			end++;
